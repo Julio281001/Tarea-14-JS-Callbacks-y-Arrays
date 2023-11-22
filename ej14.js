@@ -71,7 +71,7 @@ const inventario = [
   //1.-Mostrar la description de los productos sin stock
   //['1K frijol peruano']
 
-  let sinStock = inventario.filter(item => item.stock === 0);
+  let sinStock = inventario.filter(item => item.stock === 0).map(item => item.description);
   console.log(sinStock);
   //2.-Mostrar la description de los productos con un stock menor a 5
   //['1K de tortilla', '1L Leche sello rojo', '1K frijol peruano']
